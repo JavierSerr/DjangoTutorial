@@ -7,18 +7,36 @@
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
 </head>
 
+
 <body>
-    <header>
-        <a href="{% url 'home' %}">Home</a> |
-        <a href="{% url 'about' %}">About</a> |
-        <a href="{% url 'blog' %}">Blog</a>
-        <div class="nav-left">
-            <h1><a href="{% url 'home' %}">Django site JSM</a></h1>
-        </div>
-    </header>
     <div>
+        <header>
+            <div style="display: block; margin-right: auto;">
+                <div class="top-menu">
+                    <a href="{% url 'home' %}">Home</a>|
+                    <a href="{% url 'about' %}">About</a> |
+                    <a href="{% url 'blog' %}">Blog</a>
+                </div>
+                <div class="nav-left">
+                    <h1><a href="{% url 'home' %}">Django site JSM</a></h1>
+                </div>
+            </div>
+            <div class="greeting">
+                {% if user.is_authenticated %}
+                <p>Hi {{ user.username }}!</p>
+                <a href="{% url 'logout' %}">Log Out</a>
+                {% else %}
+                <p>You are not logged in. </p>
+                <a href="{% url 'login' %}">Log In</a>
+                <a href="{% url 'signup' %}">Sign Up</a>
+                {% endif %}
+            </div>
+        </header>
         {% block content %}
         {% endblock content %}
+        {% if not user.is_authenticated %}
+        <p>You are not logged in. </p>
+        {% endif %}
     </div>
 </body>
 
