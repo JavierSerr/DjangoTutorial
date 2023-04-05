@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title> Django site</title>
+    <title> Javier Serrano Molina</title>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
 </head>
@@ -18,25 +18,14 @@
                     <a href="{% url 'blog' %}">Blog</a>
                 </div>
                 <div class="nav-left">
-                    <h1><a href="{% url 'home' %}">Django site JSM</a></h1>
+                    <h1><a href="{% url 'home' %}">Javier Serrano Molina</a></h1>
+                    <h3> Data scientist | Data Analyst | Developer </h3>
                 </div>
             </div>
-            <div class="greeting">
-                {% if user.is_authenticated %}
-                <p>Hi {{ user.username }}!</p>
-                <a href="{% url 'logout' %}">Log Out</a>
-                {% else %}
-                <p>You are not logged in. </p>
-                <a href="{% url 'login' %}">Log In</a>
-                <a href="{% url 'signup' %}">Sign Up</a>
-                {% endif %}
-            </div>
+
         </header>
         {% block content %}
         {% endblock content %}
-        {% if not user.is_authenticated %}
-        <p>You are not logged in. </p>
-        {% endif %}
     </div>
 </body>
 
