@@ -38,10 +38,9 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "whitenoise.runserver_nostatic",
     "django.contrib.staticfiles",
-    "polls.apps.PollsConfig",
+    "experience.apps.PollsConfig",
     "blog.apps.BlogConfig",
     "accounts.apps.AccountsConfig",
-    "portfolio.apps.PortfolioConfig",
 ]
 
 MIDDLEWARE = [

@@ -86,9 +86,9 @@ header div.top-menu {
 }
 
 .lateral-bar {
-    width: 25%;
+    width: 30%;
     display: inline-block;
-    padding-left: 5%;
+    margin-left: 5%;
     vertical-align: top;
     border: 5px solid red;
     background-color: rgb(255, 208, 120);

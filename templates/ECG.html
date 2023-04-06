@@ -1,0 +1,33 @@
+<!-- templates/ECG.html-->
+{% extends "base.html" %}
+
+{% block content %}
+<div class="post-entry">
+    <h2>{{ post.title }}</h2>
+    <p>Set of 3 Jupyter notebooks that explore electrophysiological concepts and provide some theoretical background of
+        electrocardiogram(ECG) signals. Freely accessible data was imported from a database on physionet
+        (https://physionet.org/content/mitdb/1.0.0/). The contents are divided into the following sections:</p>
+    <ul>
+        <li>Basics: Theory and concepts of a healthy EEG signal.
+        </li>
+        <li>ECG Analysis: Automation of basic analysis and
+            exploration of ECG signal. This includes obtaining important parámeters and values, and relevant marked
+            plots.
+        </li>
+        <li>
+            Advanced AI
+            ECG analysis: Explained development of an advanced AI architecture to diagnose cardiac arrhythmia. This
+            process
+            includes the download of open-source marked recordings, database pre-processing, architecture optimization,
+            model
+            training, and model evaluation. The elaboration of the network was developed step by step and it explained
+            how
+            to identify
+            overfitting and how to correct it. The final accuracy of the algorithm was 81%.
+        </li>
+    </ul>
+    <p>The tutorials can be found in the following GitHub repository:
+    </p>
+    <a href="https://github.com/JavierSerr/Electrophisology/tree/main/ECG/Code"> ECG </a>
+</div>
+{% endblock content %}

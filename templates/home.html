@@ -3,13 +3,69 @@
 
 {% block content %}
 <div style="width: 90%; display: inline-block;">
-    <div style="width: 30%; display: inline-block; margin-left: 5%; vertical-align: top; ">
-        <h2> Contact</h2>
+    <div class="lateral-bar">
+        <h2> Information</h2>
+        <div style="display: inline-block;">
+            <figure style="display: inline-block; vertical-align: top; margin: 10px;">
+                {% load static %} <img src='{% static "mysite/media/location_1.png" %}' alt="location">
+            </figure>
+            <div style="display: inline-block; width: 50%; margin: 0%;">
+                <h4 style="margin: 0%;">CDMX/Querétaro, México</h4>
+            </div>
+        </div>
+        <div style="display: block;">
+            <figure style="display: inline-block; vertical-align: top; margin: 10px;">
+                {% load static %} <img src='{% static "mysite/media/phone_1.png" %}' alt="phone">
+            </figure>
+            <div style="display: inline-block; width: 80%; margin: 0%;">
+                <p style="margin: 0%; padding-top: 4px;">+52 (442) 258 0908</p>
+            </div>
+        </div>
+        <div style="display: inline-block;">
+            <figure style="display: inline-block; vertical-align: top; margin: 10px;">
+                {% load static %} <img src='{% static "mysite/media/email_1.png" %}' alt="email">
+            </figure>
+            <div style="display: inline-block; width: 80%; margin: 0%;">
+                <p style="margin: 0%; padding-top: 4px;">jserranomolina@gmail.com</p>
+            </div>
+        </div>
+        <div style="display: block;; margin-top: 5px;">
+            <figure style="display: inline-block; vertical-align: top; margin: 5px 10px;">
+                {% load static %} <img src='{% static "mysite/media/linkedin_1.png" %}' alt="linkedin">
+            </figure>
+            <div style="display: inline-block; width: 80%; margin: 0%;">
+                <a href="https://www.linkedin.com/in/javier-serrano1/"
+                    style="margin: 0%; padding-top: 8px;">javier-serrano1</a>
+            </div>
+        </div>
+        <div style="display: block; margin-top: 5px;">
+            <figure style="display: inline-block; vertical-align: top; margin: 5px 10px;">
+                {% load static %} <img src='{% static "mysite/media/github_1.png" %}' alt="github">
+            </figure>
+            <div style="display: inline-block; width: 80%; margin: 0%;">
+                <a href="https://github.com/JavierSerr/" style="margin: 0%; padding-top: 10px;">JavierSerr</a>
+            </div>
+        </div>
         <h2> Languages</h2>
+        <p>English . Advanced C1</p>
+        <p>German - Intermediate B2</p>
         <h2> Hard skills</h2>
+        <ul>
+            <li>Python</li>
+            <li>SQL</li>
+            <li>AWS</li>
+            <li>Tableau</li>
+            <li>Azure</li>
+            <li>Docker</li>
+            <li>R</li>
+            <li>C</li>
+            <li>CSS</li>
+            <li>Java</li>
+            <li>JavaScript</li>
+        </ul>
     </div>
 
-    <div style="width: 60%; margin: 0 ; display: inline-block;">
+    <div style="width: 60%; margin-left: 5% ; display: inline-block;">
         <h1 style="margin-left: 5%;">Profile</h1>
         <p>
             I am a data scientist with a strong background in statistics, mathematics, and computer science.
