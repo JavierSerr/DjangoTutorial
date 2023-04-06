@@ -107,3 +107,10 @@ header div.top-menu {
 .experiencia h4 {
     font-weight: bold;
 }
+
+.experiencia {
+    width: 80%;
+    margin: 0% 10%;
+    text-align: justify;
+    text-justify: inter-word;
+}
